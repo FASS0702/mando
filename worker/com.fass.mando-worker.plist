@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.fass.mando-worker</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>/Users/felipeandressaxtonsanchez/Documents/AgenteSuite/mando/worker/mando-worker.mjs</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>MANDO_URL</key><string>https://REEMPLAZAR.vercel.app</string>
+    <key>MANDO_AGENT_TOKEN</key><string>REEMPLAZAR</string>
+    <key>MANDO_WORKER_NAME</key><string>mac-felipe</string>
+    <key>MANDO_WORKDIR</key><string>/Users/felipeandressaxtonsanchez/Documents/AgenteSuite</string>
+    <key>PATH</key><string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>/Users/felipeandressaxtonsanchez/Library/Logs/mando/launchd.out.log</string>
+  <key>StandardErrorPath</key><string>/Users/felipeandressaxtonsanchez/Library/Logs/mando/launchd.err.log</string>
+</dict>
+</plist>
